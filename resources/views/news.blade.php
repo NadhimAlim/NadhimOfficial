@@ -444,7 +444,7 @@
       </div>
     </section>
 
-    <!-- education section -->
+    <!-- news section -->
     <section class="bg-white" id="berita">
       <div class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:py-16 xl:py-24">
         <div class="max-w-7xl sm:flex sm:justify-between mb-8">
