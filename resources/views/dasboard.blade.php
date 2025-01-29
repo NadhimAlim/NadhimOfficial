@@ -773,31 +773,6 @@
             </div>
         </div>
 
-        {{-- <div class="app-content">
-            <div class="app-content-header">
-                <h1 class="app-content-headerText">DashNA</h1>
-                <button class="mode-switch" title="Switch Theme">
-                    <svg class="moon" fill="none" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2" width="24" height="24" viewBox="0 0 24 24">
-                        <defs></defs>
-                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
-                    </svg>
-                </button>
-                <button class="app-content-headerButton">Buat Artikel</button>
-            </div>
-            <div class="app-content-actions">
-                <h2>Selamat datang Kak Muhammad Nadhim Alim
-                </h2>
-            </div>
-
-
-            <div class="products-area-wrapper tableView">
-
-
-
-                <!-- Konten -->
-            </div>
-        </div> --}}
         <div class="app-content">
             <div class="app-content-header">
                 <h1 class="app-content-headerText">Dashboard</h1>
@@ -809,6 +784,55 @@
             <div class="app-content-actions">
                 <h2>Welcome, {{ Auth::user()->name }}</h2>
             </div>
+            {{-- bikin card tentang karya karya saya --}}
+            <!-- Karya Saya Section -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-lg rounded-2xl overflow-hidden max-w-xs mx-auto">
+                    {{-- <img src="{{ asset('image/webdesign1.png') }}" alt="Proyek 1" class="w-full h-32 object-cover"> --}}
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Proyek 1: Website EduTech</h3>
+                        <p class="text-gray-600 mt-2 text-sm">
+                            Website pendidikan interaktif dengan fitur navigasi, kuis, dan testimonial.
+                        </p>
+                        <a href="#" class="text-blue-500 mt-4 inline-block hover:underline">Lihat Selengkapnya</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white shadow-xl rounded-2xl overflow-hidden max-w-xs mx-auto transition-transform transform hover:scale-105">
+                    <!-- Gambar -->
+                    {{-- <img src="{{ asset('image/webdesign1.png') }}" alt="Proyek 2" class="w-full h-40 object-cover"> --}}
+
+                    <!-- Konten -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 hover:text-blue-600 transition-colors">Proyek 2: Face Detection</h3>
+                        <p class="text-gray-500 mt-2 text-sm leading-relaxed">
+                            Fitur deteksi wajah dan tangan menggunakan OpenCV dan MediaPipe yang dapat diintegrasikan dalam berbagai aplikasi.
+                        </p>
+                        <a href="#" class="text-blue-500 mt-4 inline-block hover:underline text-sm font-medium">Lihat Selengkapnya</a>
+                    </div>
+                </div>
+
+
+                <!-- Card 3 -->
+                <div class="bg-white shadow-lg rounded-2xl overflow-hidden max-w-xs mx-auto">
+                    {{-- <img src="{{ asset('image/webdesign1.png') }}" alt="Proyek 3" class="w-full h-32 object-cover"> --}}
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Proyek 3: Sistem Parkir</h3>
+                        <p class="text-gray-600 mt-2 text-sm">
+                            Sistem basis data untuk mengelola informasi kendaraan parkir.
+                        </p>
+                        <a href="#" class="text-blue-500 mt-4 inline-block hover:underline">Lihat Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
         </div>
 
     </div>

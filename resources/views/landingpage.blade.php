@@ -681,7 +681,7 @@
             <li><a href="#pendidikan">My Education</a></li>
             <li><a href="#skill">Skill</a></li>
             <li><a href="#upgrade">Upgrade Hidup</a></li>
-            <li><a href="{{ route('news') }}">News</a></li>
+            <li><a href="{{ route('news') }}">Project</a></li>
             <li><a href="#kontak">Kontak</a></li>
         </ul>
 
