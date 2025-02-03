@@ -796,6 +796,8 @@
             /* Menyesuaikan tinggi sidebar agar bisa di-scroll */
         }
 
+
+
         /* Optional: Styling untuk scrollbar */
         .app-content::-webkit-scrollbar {
             width: 8px;
@@ -826,8 +828,8 @@
                 </div>
             </div>
             <ul class="sidebar-list">
-                <li class="sidebar-list-item active">
-                    <a href="#">
+                <li class="sidebar-list-item">
+                    <a href="{{ route('dasboard') }}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" class="feather feather-home">
@@ -837,8 +839,8 @@
                         <span>Dashboard</span>
                     </a>
                 </li>
-                <li class="sidebar-list-item">
-                    <a href="{{ route('sourcecode') }}">
+                <li class="sidebar-list-item active">
+                    <a href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" class="feather feather-shopping-bag">
@@ -871,10 +873,9 @@
 
         <div class="app-content">
             <div class="app-content-header">
-                <h1 class="app-content-headerText">Dashboard</h1>
+                <h1 class="app-content-headerText">Download Source Code</h1>
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
-                    <a href="">Source Code</a>
                     <button class="app-content-headerButton" type="submit">Logout</button>
                 </form>
             </div>
@@ -884,90 +885,50 @@
 
             </div>
             {{-- bikin card tentang karya karya saya --}}
-            <!-- Karya Saya Section -->
             <div class="grid-container">
                 <!-- Card 1 -->
                 <div class="card">
-                    <video width="100%" height="auto" controls>
-                        <source src="video1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>Proyek 1: Website EduTech</h3>
-                    <p>Website pendidikan interaktif dengan fitur navigasi, kuis, dan testimonial.</p>
-                    <a href="#">Lihat Selengkapnya</a>
+                    <a href="video1.mp4" download class="btn-download">Download Proyek</a>
                 </div>
 
                 <!-- Card 2 -->
                 <div class="card">
-                    <video width="100%" height="auto" controls>
-                        <source src="video2.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>Proyek 2: Face Detection</h3>
-                    <p>Fitur deteksi wajah dan tangan menggunakan OpenCV dan MediaPipe yang dapat diintegrasikan dalam
-                        berbagai aplikasi.</p>
-                    <a href="#">Lihat Selengkapnya</a>
+                    <a href="video2.mp4" download class="btn-download">Download Proyek</a>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="card">
-                    <video width="100%" height="auto" controls>
-                        <source src="video3.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>Proyek 3: Sistem Parkir</h3>
-                    <p>Sistem basis data untuk mengelola informasi kendaraan parkir.</p>
-                    <a href="#">Lihat Selengkapnya</a>
+                    <a href="video3.mp4" download class="btn-download">Download Proyek</a>
                 </div>
 
                 <!-- Card 4 -->
                 <div class="card">
-                    <video width="100%" height="auto" controls>
-                        <source src="video4.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>Proyek 4: Aplikasi Mobile</h3>
-                    <p>Aplikasi mobile untuk manajemen tugas dan proyek.</p>
-                    <a href="#">Lihat Selengkapnya</a>
+                    <a href="video4.mp4" download class="btn-download">Download Proyek</a>
                 </div>
                 <div class="card">
-                    <video width="100%" height="auto" controls>
-                        <source src="video4.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>Proyek 4: Aplikasi Mobile</h3>
-                    <p>Aplikasi mobile untuk manajemen tugas dan proyek.</p>
-                    <a href="#">Lihat Selengkapnya</a>
+                    <a href="video4.mp4" download class="btn-download">Download Proyek</a>
                 </div>
                 <div class="card">
-                    <video width="100%" height="auto" controls>
-                        <source src="video4.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>Proyek 4: Aplikasi Mobile</h3>
-                    <p>Aplikasi mobile untuk manajemen tugas dan proyek.</p>
-                    <a href="#">Lihat Selengkapnya</a>
+                    <a href="video4.mp4" download class="btn-download">Download Proyek</a>
                 </div>
                 <div class="card">
-                    <video width="100%" height="auto" controls>
-                        <source src="video4.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>Proyek 4: Aplikasi Mobile</h3>
-                    <p>Aplikasi mobile untuk manajemen tugas dan proyek.</p>
-                    <a href="#">Lihat Selengkapnya</a>
+                    <a href="video4.mp4" download class="btn-download">Download Proyek</a>
                 </div>
                 <div class="card">
-                    <video width="100%" height="auto" controls>
-                        <source src="{{ asset('image/video/video1.mkv') }}" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>Proyek 4: Aplikasi Mobile</h3>
-                    <p>Aplikasi mobile untuk manajemen tugas dan proyek.</p>
-                    <a href="#">Lihat Selengkapnya</a>
+                    <a href="video4.mp4" download class="btn-download">Download Proyek</a>
+                </div>
+                <div class="card">
+                    <a href="video4.mp4" download class="btn-download">Download Proyek</a>
+                </div>
+                <div class="card">
+                    <a href="video4.mp4" download class="btn-download">Download Proyek</a>
+                </div>
+                <div class="card">
+                    <a href="video4.mp4" download class="btn-download">Download Proyek</a>
                 </div>
             </div>
         </div>
+
     </div>
     <!-- partial -->
     <script src="./script.js"></script>
