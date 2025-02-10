@@ -722,93 +722,96 @@
         </div>
     </section>
 
-    <!-- education section -->
-    <section class="bg-white" id="pendidikan">
-        <div class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:py-16 xl:py-24">
-            <div class="max-w-7xl sm:flex sm:justify-between">
-                <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl text-red-500">
-                    My Education
-                </h2>
-            </div>
+    <section class="py-16 text-center space-y-8 text-white" style="background-color: rgb(71, 43, 43)">
+        <h3 class="text-gray-400 text-sm">My Education Journey</h3>
+        <h2 class="text-4xl font-bold">Education</h2>
+        <div class="container mx-auto px-4 sm:px-8 flex flex-col items-center space-y-12">
+            <div class="relative w-full max-w-4xl space-y-12">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gray-500 h-full hidden md:block"></div>
 
-            <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Experience Items -->
+                <div class="relative flex flex-col items-center w-full text-center md:flex-row md:text-left">
+                    <!-- Circle Indicator -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-gray-500 rounded-full border-2 border-gray-700 hidden md:block"></div>
 
 
-                <!-- Primary School -->
-                <article class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-                    <img src="{{ asset('image/pendidikan/sdit.png') }}" alt="Primary School" class="h-56 w-full object-cover">
-                    <div class="p-4 sm:p-6">
-                        <h3 class="text-lg font-medium text-gray-900">
-                            SDIT Baitussalam Prambanan
-                        </h3>
-                        <p class="mt-2 text-sm text-gray-500">
-                            Description of your primary school education, including notable
-                            achievements or experiences.
-                        </p>
-                        <a href="#more-info"
-                            class="mt-4 inline-block rounded-lg bg-red-500 px-4 py-2 text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500">
-                            Learn More
-                        </a>
+                    <div class="w-full md:w-1/2 px-4 space-y-2 order-2 md:order-1">
+                        <h3 class="text-xl font-bold">Elementary School</h3>
+                        <p class="text-gray-400">SDIT Baitussalam Prambanan</p>
+                        <ul class="mt-2 text-sm text-gray-300 space-y-2">
+                            <li>&#8226; Aktif dalam kegiatan ekstrakurikuler.</li>
+                            <li>&#8226; Mempelajari dasar-dasar membaca, menulis, dan berhitung.</li>
+                            <li>&#8226; Mengikuti program Tahfidz Al-Qur'an.</li>
+                            <li>&#8226; Mengembangkan keterampilan sosial dan kepemimpinan.</li>
+                        </ul>
                     </div>
-                </article>
-
-                <!-- Junior High School -->
-                <article class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-                    <img src="{{ asset('image/pendidikan/smp.png') }}" alt="Primary School" class="h-56 w-full object-cover">
-                    {{-- <img alt="Junior High School" src="./pendidikan/smp.png" class="h-56 w-full object-cover" /> --}}
-                    <div class="p-4 sm:p-6">
-                        <h3 class="text-lg font-medium text-gray-900">
-                            SMP N 2 Piyungan
-                        </h3>
-                        <p class="mt-2 text-sm text-gray-500">
-                            Description of your junior high school education, including
-                            notable achievements or experiences.
-                        </p>
-                        <a href="#more-info"
-                            class="mt-4 inline-block rounded-lg bg-red-500 px-4 py-2 text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500">
-                            Learn More
-                        </a>
+                    <div class="w-full md:w-1/2 px-4 text-center mt-4 md:mt-0 order-1 md:order-2">
+                        <span class="text-gray-400 text-sm">2010 - 2017</span>
                     </div>
-                </article>
+                </div>
 
-                <!-- Senior High School -->
-                <article class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-                    <img src="{{ asset('image/pendidikan/man.png') }}" alt="Primary School" class="h-56 w-full object-cover">
+                <!-- Duplicate for More Entries -->
+                <div class="relative flex flex-col items-center w-full text-center md:flex-row md:text-left">
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-gray-500 rounded-full border-2 border-gray-700 hidden md:block"></div>
 
-                    <div class="p-4 sm:p-6">
-                        <h3 class="text-lg font-medium text-gray-900">MAN 3 Bantul</h3>
-                        <p class="mt-2 text-sm text-gray-500">
-                            Description of your senior high school education, including
-                            notable achievements or experiences.
-                        </p>
-                        <a href="#more-info"
-                            class="mt-4 inline-block rounded-lg bg-red-500 px-4 py-2 text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500">
-                            Learn More
-                        </a>
+
+
+                    <div class="w-full md:w-1/2 px-4 space-y-2 order-2 md:order-1">
+                        <h3 class="text-xl font-bold">Junior High School</h3>
+                        <p class="text-gray-400">SMP Negeri 2 Piyungan</p>
+                        <ul class="mt-2 text-sm text-gray-300 space-y-2">
+                            <li>&#8226; Aktif dalam ekstrakurikuler videografi.</li>
+                            <li>&#8226; Berpartisipasi dalam kegiatan pramuka.</li>
+                            <li>&#8226; Aktif dalam kegiatan sekolah.</li>
+                            <li>&#8226; Mempelajari dasar-dasar ilmu pengetahuan.</li>
+                        </ul>
                     </div>
-                </article>
-
-                <!-- University -->
-                <article
-                    class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm lg:col-span-1 lg:col-start-2">
-                    <img src="{{ asset('image/pendidikan/uad.png') }}" alt="Primary School" class="h-56 w-full object-cover">
-                    <div class="p-4 sm:p-6">
-                        <h3 class="text-lg font-medium text-gray-900">
-                            Informatika - UAD
-                        </h3>
-                        <p class="mt-2 text-sm text-gray-500">
-                            Description of your university education, including notable
-                            achievements or experiences.
-                        </p>
-                        <a href="#more-info"
-                            class="mt-4 inline-block rounded-lg bg-red-500 px-4 py-2 text-white hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500">
-                            Learn More
-                        </a>
+                    <div class="w-full md:w-1/2 px-4 text-center mt-4 md:mt-0 order-1 md:order-2">
+                        <span class="text-gray-400 text-sm">2017 - 2020</span>
                     </div>
-                </article>
+                </div>
+
+                <div class="relative flex flex-col items-center w-full text-center md:flex-row md:text-left">
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-gray-500 rounded-full border-2 border-gray-700 hidden md:block"></div>
+
+
+                    <div class="w-full md:w-1/2 px-4 space-y-2 order-2 md:order-1">
+                        <h3 class="text-xl font-bold">Senior High School</h3>
+                        <p class="text-gray-400">MA Negeri 3 Bantul</p>
+                        <ul class="mt-2 text-sm text-gray-300 space-y-2">
+                            <li>&#8226; Berpartisipasi dalam kegiatan Pramuka.</li>
+                            <li>&#8226; Berpartisipasi dalam kegiatan sekolah.</li>
+                            <li>&#8226; Melakukan Kegiatan Palang Merah Remaja.</li>
+                            <li>&#8226; Memperdalam sains, sosial, dan studi Islam.</li>
+                            <li>&#8226; Belajar teknologi dan pengembangan web.</li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/2 px-4 text-center mt-4 md:mt-0 order-1 md:order-2">
+                        <span class="text-gray-400 text-sm">2020 - 2023</span>
+                    </div>
+                </div>
+
+                <div class="relative flex flex-col items-center w-full text-center md:flex-row md:text-left">
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-gray-500 rounded-full border-2 border-gray-700 hidden md:block"></div>
+
+                    <div class="w-full md:w-1/2 px-4 space-y-2 order-2 md:order-1">
+                        <h3 class="text-xl font-bold">University</h3>
+                        <p class="text-gray-400">Universitas Ahmad Dahlan</p>
+                        <ul class="mt-2 text-sm text-gray-300 space-y-2">
+                            <li>&#8226; Aktif di Informatics Anniversary.</li>
+                            <li>&#8226; Belajar Ilmu Komputer & web development.</li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/2 px-4 text-center mt-4 md:mt-0 order-1 md:order-2">
+                        <span class="text-gray-400 text-sm">2023 - Present</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+
 
     <section id="skill" class="skill">
         <h1>Skill Saya</h1>
@@ -1216,19 +1219,19 @@
                 </li>
                 <li>
                     <a href="#" class="group block overflow-hidden">
-                        <img src="{{ asset('image/fotonadhim4.jpeg') }}"  alt="Foto 4"
+                        <img src="{{ asset('image/fotonadhim4.jpeg') }}" alt="Foto 4"
                             class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]" />
                     </a>
                 </li>
                 <li>
                     <a href="#" class="group block overflow-hidden">
-                        <img src="{{ asset('image/fotonadhim1.jpeg') }}"  alt="Foto 4"
+                        <img src="{{ asset('image/fotonadhim1.jpeg') }}" alt="Foto 4"
                             class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]" />
                     </a>
                 </li>
                 <li>
                     <a href="#" class="group block overflow-hidden">
-                        <img src="{{ asset('image/fotonadhim3.jpeg') }}"  alt="Foto 4"
+                        <img src="{{ asset('image/fotonadhim3.jpeg') }}" alt="Foto 4"
                             class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]" />
                     </a>
                 </li>
